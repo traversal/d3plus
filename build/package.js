@@ -1,0 +1,16 @@
+export var name = "d3plus";
+export var version = "2.0.0-alpha.22";
+export var description = "Data visualization made easy. A javascript library that extends the popular D3.js to enable fast and beautiful visualizations.";
+export var main = "build/d3plus.js";
+export var license = "MIT";
+export var homepage = "https://d3plus.org";
+export var repository = {"type":"git","url":"https://github.com/alexandersimoes/d3plus.git"};
+export var keywords = ["charts","d3","d3plus","data","visualization"];
+export var author = {"name":"Dave Landry","email":"landry.dave@gmail.com","url":"http://www.dave-landry.com"};
+export var dependencies = {"d3plus-axis":"^0.4.11","d3plus-color":"^0.6.6","d3plus-common":"^0.6.51","d3plus-geomap":"^0.6.4","d3plus-hierarchy":"^0.8.7","d3plus-legend":"^0.8.24","d3plus-network":"^0.5.8","d3plus-plot":"^0.8.14","d3plus-priestley":"^0.3.4","d3plus-shape":"^0.16.10","d3plus-text":"^0.9.45","d3plus-timeline":"^0.4.13","d3plus-tooltip":"^0.3.10","d3plus-viz":"^0.12.35"};
+export var bin = {"d3plus-website":"bin/website.js","d3plus-workshop":"bin/workshop.js"};
+export var scripts = {"build":"npm run pretest && d3plus-build","dev":"d3plus-dev","env":"d3plus-env","postpublish":"d3plus-website && d3plus-workshop","prepublishOnly":"npm run build && npm run test","pretest":"mkdir -p build && json2module package.json > build/package.js","release":"npm publish --tag next","test":"eslint --color index.js"};
+export var devDependencies = {"d3plus-dev":"^0.7.2","json2module":"0.0.3"};
+export var module = "es/index";
+export var files = ["bin","build/d3plus.js","build/d3plus.js.map","build/d3plus.min.js","es"];
+export var sideEffects = false;
